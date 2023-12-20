@@ -3,7 +3,6 @@ const router = express.Router();
 const { Post } = require("../../models");
 const withAuth = require("../../utils/auth");
 
-// GET route to fetch all posts
 router.get("/", async (req, res) => {
   try {
     const postData = await Post.findAll();
@@ -13,7 +12,6 @@ router.get("/", async (req, res) => {
   }
 });
 
-// POST route to create a new post
 router.post("/", withAuth, async (req, res) => {
   try {
     const newPost = await Post.create({

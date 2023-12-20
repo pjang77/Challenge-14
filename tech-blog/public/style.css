@@ -1,0 +1,58 @@
+body,
+h1,
+h2,
+p,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: black;
+  color: white;
+}
+
+h1,
+h2 {
+  color: lightgreen;
+}
+
+.post,
+.comment {
+  background-color: white;
+  color: black;
+  margin: 10px 0;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-width: 300px;
+  margin: 20px auto;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"] {
+  margin-bottom: 10px;
+  padding: 8px;
+  border: none;
+  border-radius: 4px;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: lightgreen;
+  color: black;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+form button:hover {
+  background-color: #d4edb4;
+}

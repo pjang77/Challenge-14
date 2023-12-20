@@ -1,0 +1,23 @@
+{
+    "development": {
+      "username": "root",
+      "password": "seven7seven",
+      "database": "tech_blog_db",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "test": {
+      "username": "root",
+      "password": "password",
+      "database": "tech_blog_db_test",
+      "host": "127.0.0.1",
+      "dialect": "mysql",
+      "logging": false
+    },
+    "production": {
+      "use_env_variable": "JAWSDB_URL",
+      "dialect": "mysql"
+    }
+  }
+  
